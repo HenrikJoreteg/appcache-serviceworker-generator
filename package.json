@@ -1,7 +1,7 @@
 {
   "name": "appcache-serviceworker-generator",
   "description": "Can generate an appcache manifest and ServiceWorker from same abstraction.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Henrik Joreteg <henrik@andyet.net>",
   "bugs": {
     "url": "https://github.com/henrikjoreteg/appcache-serviceworker-generator/issues"
