@@ -16,24 +16,20 @@ manifest.cache('/')
 manifest.fallback('/somepath.html /somefallback.html')
 
 console.log(manifest.toAppCache())
-/*
-creates this string =>
-
-`
-CACHE MANIFEST
-# version: 123
-
-CACHE:
-/
-/some/image.png
-
-NETWORK:
-*
-
-FALLBACK:
-/somepath.html /somefallback.html
-`
-*/
+// creates this string =>
+// CACHE MANIFEST
+// # version: 123
+// 
+// CACHE:
+// /
+// /some/image.png
+// 
+// NETWORK:
+// *
+// 
+// FALLBACK:
+// /somepath.html /somefallback.html
+// 
 
 // It can then also generate a *roughly* equivalent ServiceWorker as a string
 // (it's your job to write to disk or whatever)
@@ -49,7 +45,7 @@ I *am* using this on a small project where I've generated a static site with web
 
 The app the initiates either selectively by first checking for support like this:
 
-```
+```js
 var cacheNanny = require('appcache-nanny')
 
 if ('serviceWorker' in navigator) {
