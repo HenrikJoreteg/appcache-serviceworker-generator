@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# version: 123
+
+CACHE:
+/
+/some/image.png
+
+NETWORK:
+*
+
+FALLBACK:
+/somepath.html /somefallback.html

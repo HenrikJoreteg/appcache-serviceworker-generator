@@ -1,0 +1,42 @@
+{
+  "name": "appcache-serviceworker-generator",
+  "description": "Can generate an appcache manifest and ServiceWorker from same abstraction.",
+  "version": "0.0.0",
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "bugs": {
+    "url": "https://github.com/henrikjoreteg/appcache-serviceworker-generator/issues"
+  },
+  "dependencies": {
+    "extend-object": "^1.0.0",
+    "glob": "^5.0.12"
+  },
+  "devDependencies": {
+    "serviceworker-cache-polyfill": "^3.0.0",
+    "standard": "^4.5.1",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/henrikjoreteg/appcache-serviceworker-generator#readme",
+  "keywords": [
+    "appcache",
+    "generator",
+    "html5",
+    "manifest",
+    "serviceworker"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrikjoreteg/appcache-serviceworker-generator.git"
+  },
+  "scripts": {
+    "pretest": "standard",
+    "test": "node test/index.js"
+  },
+  "standard": {
+    "ignore": [
+      "polyfill.js",
+      "example/generated*"
+    ]
+  }
+}
